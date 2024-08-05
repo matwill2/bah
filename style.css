@@ -1,13 +1,43 @@
-@import url('https://fonts.googleeapis.com/css2?family=Roboto&family=Roboto=Mono&display=swap');
 :root{
-    --branco:white;
-    --cor-de-fundo: #00162e; 
-    --fundo-texto: #001e40;
-    --borda: #0075ff;
-    --roboto-mono: 'Roboto Mono', sans-serif;
+    --cor-fundo: #01080E ;
+    --cor-principal: #0B0D20 ;
+    --cor-secundaria: #212333; 
+    --cor-destaque: #2BDEFD;
+    --cor-texto: #D7F9FF;
 
 }
-body{
-    color: var(--branco);
-    background-color: var(--cor-de-fundo);
+
+body {
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.caixa-principal{
+    background-color: var(--cor-principal);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    padding: 20px;
+}
+
+h1{
+    color: var(--cor-destaque);
+}
+
+button {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+button:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-principal);
 }
